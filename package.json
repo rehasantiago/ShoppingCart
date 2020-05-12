@@ -1,8 +1,7 @@
 {
-  "name": "shopoholic",
+  "name": "shopping-cart",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.io/GBspace/React-Redux-E-Commerce",
   "dependencies": {
     "classnames": "^2.2.5",
     "ramda": "^0.23.0",
