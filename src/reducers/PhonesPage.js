@@ -21,12 +21,6 @@ export default (state = initialState,action)=>{
                 ids: R.concat(ids,state.ids)
             });
         }
-        case 'SEARCH_PHONE' :
-        {   console.log("text to be searched is " , action.payload);
-            return R.merge(state, {
-                search: action.payload
-            });
-        }
         default:
             return state;
     }

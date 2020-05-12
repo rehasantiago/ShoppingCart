@@ -101,13 +101,6 @@ export const addPhoneToBasket = id => dispatch => {
     });
 };
 
-export const searchPhone = text => dispatch =>{
-    console.log("searching ", text);
-    dispatch({
-        type: 'SEARCH_PHONE',
-        payload: text
-    })};
-
 export const removePhoneFromBasket = (id)=> async dispatch =>{
     dispatch({
         type: 'REMOVE_PHONE_FROM_BASKET',
@@ -121,6 +114,9 @@ export const cleanBasket = ()=>dispatch => {
     });
 };
 
-export const basketCheckout = (phones)=> () =>{
+export const basketCheckout = ()=> (dispatch) =>{
+    dispatch({
+        type: 'CLEAN_BASKET'
+    });
     alert('Purchased');
 };
