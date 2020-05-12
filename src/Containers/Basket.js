@@ -76,7 +76,7 @@ const Basket = ({phones,totalPrice,
                                 onClick={()=>basketCheckout(phones)}
                             >
                             <span className="glyphicon glyphicon-envelope"/>
-                            Checkout
+                            Purchase
                             </button>
                         </div>
                     }
